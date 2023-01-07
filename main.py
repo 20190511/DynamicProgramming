@@ -20,6 +20,10 @@ f(n) = min(f(n-a1), f(n-a2), ... , f(n-an)) + 1
 5
 7
 
+3 7
+2
+3
+5
 ----
 [result]
 5
@@ -41,15 +45,37 @@ for i in range(n):
   coin_list.append(co)
   dp[co] = 1
 
+dp[0] = 0 #i-coin = 0 인
 max_coin = max(coin_list)
-for i in range(max_coin+1, m+1):
+for i in range(1, m+1):
   min_val = 101
   for coin in coin_list:
-    if dp[i-coin] != -1:
+    if i>=coin and dp[i-coin] != -1:
       if min_val > dp[i-coin]:
         min_val = dp[i-coin]
   if min_val != 101:
     dp[i] = min_val+1
 
 print(dp[m])
-        
+print(dp[1:m+1])
+
+
+"""
+[풀이]
+  :화폐를 기준으로 화폐1개를 고정시켜두고 1~m번까지 쭉 돌리는 기법을 사용.
+
+  d = [10001]*(m+1)
+
+  d[0] = 0
+  for i in range(n):
+    for j in range(array[i],m+1):
+      if d[j-array[i]] != 10001:
+        d[j] = min(d[j],d[j-array[i]]+1)
+  if d[m] == 10001:
+    print(-1)
+  else:
+    print(d[m])
+
+
+
+"""
