@@ -52,4 +52,18 @@ for _ in range(t):
 
 for i in range(t):
   print(results[i])
-    
+
+"""
+[피드백]
+풀이는 전체적으로 비슷하나, 1차원 리스트 배열->2차원리스트화 시키는 기법 추가
+
+n, m = map(int,input().split())
+dp = []
+index = 0
+for i in range(n):
+  dp.append(array[index:index+m])
+  index += m
+
+"""
+
+
