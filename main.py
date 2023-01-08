@@ -82,3 +82,8 @@ for i in range(n):
 #print(dp)
 result = n - max(dp)
 print(result)
+
+"""
+LIS 알고리즘 대표적인 식
+모든 o<=j<i 에 대하여 D[i] = max(D[i], D[j]+1) if arr[j]<arr[i]
+"""
