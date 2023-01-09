@@ -9,5 +9,7 @@ Q3. 효율적인 화폐 구성 (P.226)
 ---
 A31. 금광 (p.375, Flipkart 인터뷰)
 ---
+A32. 정수 삼각형 (P.376, [https://www.acmicpc.net/problem/1932])
+---
 A34.병사 배치하기 (P.380, [https://www.acmicpc.net/problem/18353])
 ---
