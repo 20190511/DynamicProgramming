@@ -15,3 +15,5 @@ A33. 퇴사 (P.377, [https://www.acmicpc.net/problem/14501])
 ---
 A34.병사 배치하기 (P.380, [https://www.acmicpc.net/problem/18353])
 ---
+A35. 못생긴 수 (P.381, Google Interview)
+---
