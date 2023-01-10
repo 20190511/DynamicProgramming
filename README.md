@@ -17,3 +17,5 @@ A34.병사 배치하기 (P.380, [https://www.acmicpc.net/problem/18353])
 ---
 A35. 못생긴 수 (P.381, Google Interview)
 ---
+A36. 편집거리 (P.382, Goldman Sachs Interview) : 레벤슈타인 알고리즘(Levensteins Algorithm)
+---
